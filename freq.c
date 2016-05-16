@@ -5,12 +5,8 @@
 int main()
 {
     int s [SIZE], j, total = 0;
-<<<<<<< HEAD
 
 	FILE *arquivo;
-=======
-	FILE *arquivo
->>>>>>> 4d811a7ed9b1b70173fff855f9c499e1f9b4ff8b
 
     for( j = 0 ; j < SIZE; j++ )
     {
