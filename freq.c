@@ -4,7 +4,8 @@
 
 int main()
 {
-    int s [SIZE], j, total;
+    int s [SIZE], j, total = 0;
+	FILE *arquivo
 
     for( j = 0 ; j < SIZE; j++ )
     {
