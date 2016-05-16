@@ -4,16 +4,22 @@
 
 int main()
 {
-    int s [SIZE], j, total;
+    int s [SIZE], j, total = 0;
+
+	FILE *arquivo;
 
     for( j = 0 ; j < SIZE; j++ )
     {
         s[j] = 0;
     }
 
+	arquivo = fopen("nonono.txt", "r");
+
 	s['A']++; //numero de apariçoes das letras
 	s['B']++; //numero de apariçoes das letras
 	s['A']++; //numero de apariçoes das letras
+
+	fclose(arquivo);
 
     for( j = 0 ; j < SIZE; j++ )
     {
