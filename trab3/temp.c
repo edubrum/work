@@ -1,11 +1,15 @@
 #include <stdio.h>
 
+float graus (float);
+
 int main ()
 {
 
-	float f;
+	float f, c;
 	printf("Digite: ");
 	scanf ("%f", &f);
+	c = graus(f);
+	printf("%f\n", c);
 	
 }
 float graus (float f)
