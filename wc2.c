@@ -5,11 +5,16 @@ int main() {
 	FILE *arquivo;
 	int c;
 
+	char fnome[51];	
+
     int cl = 0;
     int cb = 0;
     int cp = 0;
 
-	arquivo = fopen("vetor.c", "r");
+	printf("Digite o nome do arquivo: ");
+	scanf ("%s", fnome);
+
+	arquivo = fopen(fnome, "r");
 
 	c = getc(arquivo);
     while( c != -1 )
