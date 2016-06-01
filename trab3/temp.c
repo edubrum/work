@@ -5,23 +5,24 @@ float graus (float);
 int main ()
 {
 
-	float f, c;
-	printf("Digite: ");
+	float f, c;	
+	printf("Digite em °F: ");
 	scanf ("%f", &f);
 	c = graus(f);
-	printf("%f\n", c);
+	printf("%f°C\n", c);
 	
 }
 float graus (float f)
 {
 	float c;
-	c = (5.0/9.0)*(f - 32);
+	c = (5.0f/9.0f)*(f - 32.0f);
 	if (c <= -268)
 		printf("A temperatura está proxima do zero absoluto\n");
-	else if (c >= -5 && c <= 5)
+
+	else if (c >= -5.0f && c <= 5.0f)
 			printf("Está proximo da temperatura de congelamento\n");
 
-		else if (c >= 95 && c <= 105)
+		else if (c >= 95.0f && c <= 105.0f)
 				printf("Está proximo da temperatura de ebulição\n");
 
 	return c;	
